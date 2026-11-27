@@ -24,11 +24,11 @@ warnings.filterwarnings('ignore')
 # =========================================================================================
 class Config:
     # Files
-    FILE_W1_DAILY = r"D:\Users\mweis\Desktop\论文数据\迁移学习-月度数据降尺度\3.3迁移学习模型验证\目标域模型迁移\迁移\克勒克水文站.xlsx"
-    FILE_W2_DAILY = r"D:\Users\mweis\Desktop\论文数据\迁移学习-月度数据降尺度\3.3迁移学习模型验证\目标域模型迁移\迁移\玛纳斯河水文站.xlsx"
-    FILE_W2_MONTHLY = r"D:\Users\mweis\Desktop\论文数据\迁移学习-月度数据降尺度\3.3迁移学习模型验证\目标域模型迁移\迁移\月径流-玛纳斯河.xlsx"
+    FILE_W1_DAILY = r"D:\Users\源域水文站.xlsx"   #替换路径
+    FILE_W2_DAILY = r"D:\Users\目标域水文站.xlsx"   #替换路径
+    FILE_W2_MONTHLY = r"D:\Users\月径流-目标域河.xlsx"   #替换路径
     
-    OUTPUT_DIR = r"D:\Users\mweis\Desktop\论文数据\迁移学习-月度数据降尺度\3.3迁移学习模型验证\目标域模型迁移\迁移"
+    OUTPUT_DIR = r"D:\Users\迁移"   #替换路径
     RESULT_EXCEL = os.path.join(OUTPUT_DIR, "Transfer_Learning_Results.xlsx")
     # 只修改这里：改为 PDF
     FIG_DAILY_TS = os.path.join(OUTPUT_DIR, "Transfer_Final_Daily_TimeSeries.pdf")
